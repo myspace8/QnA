@@ -8,76 +8,58 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main-container">
-
-        <!-- Header -->
-        <header>
-    
-        </header>
-
-        <!-- Main -->
-        <main>
-            <div class="question-container">
-                <div class="indicator">
-                    <span class="incre"></span> / <span class="q-length"></span>
-                </div>
-                <div>
-                    <p class="q-para">Have fun answering questions. Might not be relevant anyway :) 
-                    </p>
-                    <p class="end">END</p>
-                </div>
-    
+    <main>
+        <div class="question-container">
+            <div class="indicator">
+                <span class="incre"></span> / <span class="q-length"></span>
             </div>
+            <div>
+                <p class="q-para">POP QUIZ :) 
+                </p>
+                <p class="end">END</p>
+            </div>
+        </div>
         <!-- Answers start -->
-            <div class="answer-container">
-                <div class="style start">
-                    <button>Start</button>
-                </div>
-                <div class="end-display">
-                    Thank You!
-                </div>
-                <div class="start-again style">
-                    <button>Start again</button>
-                </div>
-
-                <div class="option">
-                    <div>
-                        <input type="radio" name="choice" id="a">
-                        <label class="label" for="a" id="one"></label>
-                    </div>
-
-                    <div>
-                        <input type="radio" name="choice" id="b"> 
-                        <label class="label" for="b" id="two"></label>
-                    </div>
-
-                    <div>
-                        <input type="radio" name="choice" id="c">
-                        <label class="label" for="c" id="three"></label>
-                    </div>
-                </div>
+        <div class="answer-container">
+            <div class="style">
+                <button class="start">Start</button>
+            </div>
+            <div class="end-display">
+                Thank You!
+            </div>
+            <div class="start-again style">
+                <button>Start again</button>
             </div>
 
-        <!-- Navigations -->
+            <div class="option">
+                <div>
+                    <input type="radio" name="choice" id="a" class="answer">
+                    <label class="label" for="a" id="a_text"></label>
+                </div>
+
+                <div>
+                    <input type="radio" name="choice" id="b" class="answer"> 
+                    <label class="label" for="b" id="b_text"></label>
+                </div>
+
+                <div>
+                    <input type="radio" name="choice" id="c" class="answer">
+                    <label class="label" for="c" id="c_text"></label>
+                </div>
+            </div>
             <div class="nav">
-                <div class="style skip">
-                    <button class="s-Btn">Skip</button>
+                <div class="style">
+                    <button class="skip">Skip</button>
                 </div>
 
-                <div class="style next">
-                    <button class="n-Btn">Next</button>
+                <div class="style">
+                    <button class="next cursor-no-drop">Next</button>
                 </div>
             </div>
+            <div class="credit">Designed by <a href="/">JO</a></div>
+        </div>        
         
-            <div class="footer">Designed and coded by <a href="/">JO</a> | All right reserved</div>
-            
-        </main>
-
-    </div>
-
- 
-
-
-    <script src="code.js"></script>
+    </main>
+    <script src="main.js"></script>
 </body>
 </html>

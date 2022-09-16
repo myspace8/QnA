@@ -7,16 +7,7 @@
 body {
     margin: 0;
     height: 100vh;
-    background-color: #242424;
-}
-
-.main-container {
-    display: grid;
-    grid-template-rows: 2em auto 2em;
     background-color: #ff2e63;
-    min-height: 100%;
-    max-width: 600px;
-    margin: 0 auto;
 }
 
 header {
@@ -30,12 +21,15 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
 }
 
 .indicator {
     display: none;
-    position: relative;
-    bottom: 2em;
+    background-color: #252a34;
+    color: #eaeaea;
+    padding: 8px 14px;
+    font-size: 18px;
 }
 
 
@@ -104,20 +98,24 @@ label {
     display: flex;
     margin: 12px 0;
 }
-
-
 .answer-container {
     background-color: inherit;
+    position: relative;
+    max-width: 400px;
 }
 
 .nav {
     display: none;
-    position: relative;
-    top: 18px;
+    position: absolute;
+    bottom: 18px;
     padding: 0 8px;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+}
+
+.cursor-no-drop {
+    cursor: no-drop !important;
 }
 
 .style {
@@ -141,18 +139,18 @@ label {
 }
 
 
-.footer {
+.credit {
     display: none;
     position: relative;
     top: 30px;
-    letter-spacing: 1.1px;
     font-family: 'Raleway', sans-serif;
-    font-size: 9px;
+    font-size: 12px;
     color: #252a34;
     font-family: sans-serif;
     text-align: center;
+    z-index: 4;
 }
 
-.footer a {
-    color: inherit;
+.credit a {
+    color: #eaeaea;
 }
