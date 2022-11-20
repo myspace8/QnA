@@ -8,13 +8,15 @@ body {
     margin: 0;
     height: 100vh;
     background-color: #ff2e63;
+    overflow: hidden;
 }
 
 header {
-    justify-content: center;
-    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
     background-color: #252a34;
-    padding: 1em;
+    color: #eaeaea;
+    padding: 0.5em;
 }
 
 main {
@@ -39,7 +41,7 @@ main {
     justify-content: center;
     align-items: center;
     padding: 32px;
-    height: 50%;
+    height: 40%;
     width: 100%;
     background-color: #efd9ca;
     color: #252a34;
@@ -84,6 +86,23 @@ main {
     width: 100%;
 }
 
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    appearance: none;
+    border: 2px solid #fff;
+    border-radius: 0.25rem;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px hsl(210, 11%, 17%);
+}
+
 label {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -96,6 +115,7 @@ label {
 
 .option div {
     display: flex;
+    align-items: center;
     margin: 12px 0;
 }
 .answer-container {
@@ -104,10 +124,24 @@ label {
     max-width: 400px;
 }
 
+input[type="radio"] {
+    height: 1.2rem;
+    width: 1.3rem;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+    background-image: radial-gradient(
+        hsl(210, 11%, 17%) 40%,
+        transparent calc(40% + 1px)
+    );
+}
+
 .nav {
     display: none;
     position: absolute;
-    bottom: 18px;
+    bottom: -12px;
     padding: 0 8px;
     justify-content: space-between;
     align-items: center;
